@@ -1,0 +1,52 @@
+.account {
+  padding: 10px;
+  min-height: calc(100vh - 150px);
+  margin-top: 6px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.container {
+  padding-top: 36px;
+}
+.sidebar {
+  padding: 0 60px;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0px 0;
+  line-height: initial;
+}
+h1:after {
+  content: "";
+  background: #000;
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 20px auto;
+}
+.side-bar {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.main-content {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.account-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+}
+.col {
+  position: relative;
+  width: 100%;
+}

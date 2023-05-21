@@ -1,0 +1,10 @@
+.main-right {
+  position: relative;
+  padding: 24px;
+  min-height: calc(80vh - 56px);
+  min-width: 1036px;
+}
+.main-view {
+  margin: auto;
+  max-width: 1230px;
+}

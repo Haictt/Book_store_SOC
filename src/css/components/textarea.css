@@ -1,0 +1,31 @@
+div.text-area {
+  background: #fff;
+  width: 100%;
+}
+div.text-area .border:not(.error):focus-within {
+  border-color: var(--button-hover);
+}
+div.text-area .border:hover {
+  border-color: var(--button-hover);
+}
+textarea {
+  border: none;
+  padding: 6px 12px;
+  resize: none;
+  background: 0 0;
+}
+textarea:focus {
+  outline: none;
+}
+.textfield-input.disabled {
+  border-color: #e0e0e0 !important;
+  cursor: unset !important;
+  pointer-events: none;
+}
+.text-area.disabled .border,
+.text-area.disabled .border textarea:disabled {
+  background-color: #ebebeb !important;
+  color: #b5b5b5;
+  cursor: unset !important;
+  pointer-events: none;
+}

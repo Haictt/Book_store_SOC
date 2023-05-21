@@ -1,0 +1,226 @@
+.checkout-container {
+  padding: 0 5%;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 78.57143em;
+}
+.main {
+  flex: 1 0 auto;
+  width: 52%;
+  padding-right: 6%;
+}
+.main-header {
+  padding-bottom: 1em;
+}
+.logo {
+  color: #2b3033;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1em;
+}
+.back {
+  margin-top: 1em;
+  display: inline-block;
+  font-size: 0.85714em;
+  color: #999999;
+  text-decoration: underline;
+}
+.main-content {
+  padding-bottom: 4em;
+  flex: 1 0 auto;
+}
+.section-header {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+.section-title {
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.28571em;
+}
+.avatar-wrapper {
+  display: table-cell;
+  padding-right: 1em;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.avatar {
+  background-image: url(https://www.gravatar.com/avatar/ebe99a5ddacd25c40c732f7c94cf1813.jpg?s=100&d=blank);
+  background-size: cover;
+  position: relative;
+  max-width: none;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.avatar::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDUwIDUwIj48dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTAgMGg1MHY1MEgwVjB6IiBmaWxsPSIjRDhEOEQ4Ii8+PHBhdGggZD0iTTI1LjEwMyAyNi4yNDJjMy4yMTIgMCA1LjY0Mi0yLjkyIDUuNjQyLTYuNzg3IDAtMy4wODYtMi41OC01LjcwNS01LjY0Mi01LjcwNS0zLjA2IDAtNS42NCAyLjYyLTUuNjQgNS43MDUgMCAzLjg2NiAyLjQzIDYuNzg3IDUuNjQgNi43ODd6bTAtMTAuNTRjMS45NTIgMCAzLjY3OCAxLjc2MyAzLjY3OCAzLjc1MyAwIDIuNzU3LTEuNTc0IDQuODM1LTMuNjc3IDQuODM1LTIuMTAzIDAtMy42NzctMi4wNzgtMy42NzctNC44MzUgMC0xLjk5IDEuNzI2LTMuNzUzIDMuNjc3LTMuNzUzem0tOC40NSAyMC42MTVsLjE3Ny0xLjg3N2MuMzktMy43NzggNC42OTctNC42MSA4LjI3My00LjYxIDMuNTc3IDAgNy44ODQuODMyIDguMjc0IDQuNTk4bC4xNzYgMS44OWgyLjAxNWwtLjE3Ni0yLjA4Yy0uNDQtNC4xMTctNC4wNjgtNi4zODQtMTAuMjktNi4zODQtNi4yMiAwLTkuODQ2IDIuMjY3LTEwLjI4NyA2LjM5N2wtLjE3NiAyLjA2N2gyLjAxNHoiIGZpbGw9IiNGRkYiLz48L2c+PC9zdmc+),
+    none;
+}
+.info {
+  display: table-cell;
+  width: 100%;
+  padding-top: 0.25em;
+  vertical-align: middle;
+}
+.side {
+  width: 38%;
+  padding-left: 4%;
+  background-position: left top;
+  position: relative;
+  color: #717171;
+}
+.fieldset {
+  width: 100%;
+  padding: 0.45em;
+}
+.product-list {
+  padding-bottom: 1em;
+  border-color: #e1e1e1;
+}
+.total-money {
+  border-top: 1px solid;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-color: #e1e1e1;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+}
+.subtotal td {
+  padding-top: 0.75em;
+}
+td:last-child,
+th:last-child {
+  text-align: right;
+}
+td:first-child,
+th:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+td,
+th {
+  padding: 0;
+  padding-left: 1em;
+}
+.sub-name {
+}
+.sub-price {
+}
+.shipping td {
+  padding-top: 0.75em;
+}
+tfoot {
+  white-space: nowrap;
+}
+.shipping-name {
+}
+.shipping-price {
+}
+.total-line td {
+  padding-top: 3em;
+  position: relative;
+}
+.total-line td::before {
+  background-color: #e1e1e1;
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+.total-line-label {
+  font-size: 1.14286em;
+  color: #4b4b4b;
+}
+.total-line-price {
+  font-size: 1.71429em;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: #4b4b4b;
+  line-height: 1em;
+}
+label.radio {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+}
+input[type="radio"] {
+  position: absolute;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+.radio-checkmark {
+  display: inline-block;
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_radio_inactive.478d13c5.svg);
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+  position: relative;
+  pointer-events: none;
+}
+.radio-text {
+  padding-left: 4px;
+  margin-bottom: 3px;
+  padding-bottom: 0;
+  display: inline-block;
+}
+input[type="radio"]:checked ~ .radio-checkmark {
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_radio_active.68000fa3.svg);
+}
+input[type="radio"]:not(:disabled):not(:checked):hover ~ .radio-checkmark {
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_radio_hover.9f996444.svg);
+}
+.content-box {
+  box-shadow: 0 0 0 1px #d9d9d9;
+  border-radius: 4px;
+  background: #fff;
+  color: #737373;
+  margin-top: 1em;
+}
+.radio-wrapper {
+  display: table;
+  box-sizing: border-box;
+  width: 100%;
+}
+.radio-wrapper:nth-of-type(1) {
+  border-bottom: 1px solid #e1e1e1;
+}
+.radio-label {
+  display: flex !important;
+  cursor: pointer !important;
+  align-items: center;
+  padding: 1.3em;
+  width: auto;
+}
+.input-content {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.input-title {
+  display: table-cell;
+  width: 100%;
+}
+.side-footer {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}

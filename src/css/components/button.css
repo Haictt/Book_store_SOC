@@ -1,0 +1,101 @@
+.button {
+  display: flex;
+  height: var(--height-primary);
+  border-radius: var(--border-radius);
+  border-width: 0px;
+  align-items: center;
+  column-gap: 4px;
+  height: 44px;
+  background-color: var(--button-color);
+  padding: 0 12px;
+  line-height: 44px;
+  cursor: pointer;
+  justify-content: center;
+}
+.button:not(:disabled):hover {
+  background-color: var(--button-hover);
+}
+.button:not(:disabled):active {
+  background-color: var(--button-active);
+}
+.button-text {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.button-text-primary {
+  color: var(--text-color);
+}
+.button-text-secondary {
+  color: var(--text-color-secondary);
+}
+.button-single {
+  padding: 0 16px;
+  min-width: 80px;
+  width: 100%;
+}
+.button-secondary {
+  border: 1px solid var(--border-color);
+  background-color: var(--text-color);
+}
+.button-secondary:hover {
+  border: 1px solid var(--button-color) !important;
+  background-color: var(--text-color) !important;
+}
+.button-secondary:active {
+  background-color: var(--border-color) !important;
+}
+.button-secondary:hover .button-text-secondary {
+  color: var(--button-color) !important;
+}
+.button-error {
+  background-color: var(--error-color);
+}
+.button-error:hover {
+  background-color: var(--error-hover) !important;
+}
+.button-error:active {
+  background-color: var(--error-active) !important;
+}
+.secondary-outline-red {
+  border: 1px solid #ef5350;
+  background: #fff !important;
+}
+.secondary-outline-red .button-text {
+  color: #ef5350;
+}
+.secondary-outline-red:not(:disabled):hover {
+  background: #fef1f1 !important;
+  border: 1px solid #ef5350 !important;
+}
+.secondary-outline-red:not(:disabled):hover .button-text {
+  color: #ef5350 !important;
+}
+.primary-outline {
+  border: 1px solid var(--button-color);
+}
+.primary-outline .button-text {
+  color: #2979ff;
+}
+
+.primary-outline:not(:disabled):hover {
+  background: #eef4ff !important;
+}
+.primary-outline:not(:disabled):active,
+.primary-outline:not(:disabled):focus {
+  background: #0062cc !important;
+}
+.primary-outline:not(:disabled):active .button-text,
+.primary-outline:not(:disabled):focus .button-text {
+  color: #fff !important;
+}
+.secondary-outline-red:not(:disabled):active,
+.secondary-outline-red:not(:disabled):focus {
+  background: #d63734 !important;
+}
+.secondary-outline-red:not(:disabled):active .button-text,
+.secondary-outline-red:not(:disabled):focus .button-text {
+  color: #fff !important;
+}

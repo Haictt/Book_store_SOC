@@ -1,0 +1,54 @@
+label.checkbox {
+  position: relative;
+  display: inline-block;
+  color: #666;
+  border-radius: var(--border-radius);
+}
+input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  z-index: 500;
+  min-height: unset;
+  border: unset;
+  border-radius: unset;
+}
+.checkbox-checkmark {
+  display: inline-block;
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_checkbox_gray.545380ea.svg);
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+  position: relative;
+}
+input[type="checkbox"]:checked ~ .checkbox-checkmark {
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_checkbox_active.5a4982e1.svg);
+}
+input[type="checkbox"]:disabled:checked ~ .checkbox-checkmark {
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_checkbox_disabled_active.c6062b71.svg);
+}
+input[type="checkbox"]:disabled ~ .checkbox-checkmark {
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_checkbox_disabled.7177f2a0.svg);
+}
+.checkbox-text {
+  padding-left: 4px;
+  margin-bottom: 3px;
+  display: inline-block;
+  color: #000;
+}
+input[type="checkbox"]:not(:disabled):hover {
+  cursor: pointer;
+}
+input[type="checkbox"]:not(:disabled):not(:checked):hover
+  ~ .checkbox-checkmark {
+  cursor: pointer;
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_checkbox_hover.d04300f4.svg);
+}
+input[type="checkbox"]:not(:disabled):not(:checked):focus
+  ~ .checkbox-checkmark {
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_checkbox_hover.d04300f4.svg);
+}

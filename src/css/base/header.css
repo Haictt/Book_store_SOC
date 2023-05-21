@@ -1,0 +1,89 @@
+.main-nav {
+  position: relative;
+  height: 56px;
+  background: #fff;
+  min-width: 1036px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+.nav-container {
+  height: 100%;
+}
+#launcher {
+  position: relative;
+  height: 100%;
+  padding: 0 16px;
+}
+#launcher::before {
+  content: "";
+  background: transparent url(../../assets/imgs/sprites.06b14dc5.svg) no-repeat -192px
+    0;
+  height: 24px;
+  width: 24px;
+}
+.logo-content {
+  align-items: center;
+  margin-right: 16px;
+}
+.nav-logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(https://cegovapp.misacdn.net/cegov/img/ic_cegoLogo_new.89475e3e.svg)
+    no-repeat;
+  background-size: 32px;
+  margin-right: 12px;
+}
+.logo-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.user {
+  position: relative;
+  width: 48px;
+  height: 50%;
+  margin: auto 5px !important;
+  border-radius: 50%;
+  top: 3px !important;
+  left: 4px !important;
+  justify-content: center;
+}
+.right-btn {
+  position: relative;
+
+  width: 48px;
+  height: 50%;
+  margin: auto 5px !important;
+  border-radius: 50%;
+  top: 3px !important;
+  left: 4px !important;
+}
+.right-btn::after {
+  content: "";
+  background: transparent url(../../assets/imgs/shopping-cart-icon.svg)
+    no-repeat;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 0);
+}
+.right-btn.help::after {
+  background-position: -48px -48px;
+}
+.right-btn.document::after {
+  background-position: -312px -74px;
+}
+.right-btn.setting::after {
+  background-position: -264px -168px;
+}
+.top-nav-right .user {
+  display: flex;
+  align-items: center;
+}
+.top-nav-right .avatar {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+}

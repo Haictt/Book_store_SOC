@@ -1,0 +1,40 @@
+.filter {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+}
+.filter-header {
+  padding: 10px 13px;
+  background: #fff;
+  color: #252a2b;
+  font-size: 16px;
+  position: relative;
+  font-weight: 600;
+}
+.filter-container {
+  background: #fff;
+  padding: 10px;
+  border-top: 1px solid #eae4e8;
+}
+.checkbox-list > li {
+  position: relative;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+}
+.checkbox-list > li .label {
+  margin: 0px;
+  margin-left: 10px;
+  font-weight: normal;
+  cursor: pointer;
+  color: #252a2b;
+  display: inline-block;
+}
+.filter-item {
+  height: 100%;
+  font-size: 1.1em;
+  color: #000;
+  padding: 10px 15px;
+  margin: 5px 10px;
+}

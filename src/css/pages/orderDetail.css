@@ -1,0 +1,105 @@
+h3.order-name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0 13px 0;
+  line-height: 1.2;
+}
+.order-name .order-date {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: none;
+  margin: 5px 0 0;
+}
+.full-container {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.order-detail-table-wrapper {
+  background: #d9edf7;
+  padding: 8px 10px;
+  margin: 30px 0;
+}
+.order-detail-table-bg {
+  background: #fff;
+  padding: 10px;
+}
+.title-detail {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 8px;
+}
+.table-responsive {
+  position: relative;
+  overflow: hidden;
+}
+.table-overflow {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border: 0;
+}
+#order-detail {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+#order-detail thead th {
+  white-space: nowrap;
+}
+table thead td {
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+#order-detail thead th,
+table tr td {
+  vertical-align: middle;
+  border-top: none;
+  font-size: 14px;
+  padding: 10px 8px;
+}
+tbody {
+  max-height: 120px;
+  overflow-y: auto;
+}
+th {
+  text-align: inherit;
+}
+td.order-image {
+  width: 70px;
+}
+td.name {
+  max-width: 300px;
+}
+td.name p {
+  color: #252a2b;
+  font-size: 13.5px;
+  white-space: normal;
+  display: block;
+  min-width: 18rem;
+}
+.table-ordership-wrapper {
+  border-top: 1px solid #ededed;
+  padding-top: 10px;
+}
+.table-customer-summary {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+img {
+  width: 60px;
+  height: 60px;
+}

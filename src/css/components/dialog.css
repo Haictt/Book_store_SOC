@@ -1,0 +1,78 @@
+.dialog {
+  display: flex;
+}
+.message-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20000;
+  opacity: 1;
+}
+.message-box-bg {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10;
+  transition: all 0.25s ease;
+  opacity: 1;
+}
+.message-box-box-outline {
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 0 16px rgba(23, 27, 42, 0.24);
+  background: #fff;
+  border-radius: 3px;
+}
+.message-box-icon {
+  display: block;
+  position: absolute;
+  margin: 0;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+}
+.message-box-container {
+  width: 444px;
+  min-width: 480px;
+  border-radius: 3px;
+}
+.message-box-header {
+  /* min-height: 144px; */
+  padding: 24px;
+}
+.message-box-content {
+  max-height: 400px;
+  overflow: auto;
+}
+.message-box-title {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: bold;
+  padding-bottom: 24px;
+}
+.message-box-description {
+  padding-bottom: 0;
+}
+.message-box-description span {
+  font-weight: 800;
+}
+.message-box-footer {
+  padding: 0 24px 24px 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.message-box-button {
+  display: flex;
+}
+.message-box-button > :not(:last-child) {
+  margin-right: 8px;
+}

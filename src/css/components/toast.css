@@ -1,0 +1,118 @@
+.toast {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  background-color: #fff;
+  z-index: 999999;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.078);
+  border-radius: var(--border-radius);
+  transition: 0.4s top linear;
+  animation: slideIn 0.3s ease, fadeOut 1s linear 4s forwards;
+}
+.toast-container {
+  display: flex;
+  align-items: center;
+  min-width: 450px;
+  max-width: 650px;
+  padding: 16px;
+  justify-content: space-between;
+}
+.toast-container-start,
+.toast-container-end {
+  display: flex;
+  align-items: center;
+}
+.toast-container-start {
+  cursor: default;
+}
+.toast-content {
+  margin-right: 16px;
+}
+.toast-container-start .toast-icon + * {
+  margin-left: 8px;
+}
+.toast-title {
+  color: var(--button-color);
+}
+.toast-container-end .toast-action {
+  margin-right: 16px;
+}
+.toast-action {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.toast-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+
+.toast-icon::after {
+  content: "";
+  position: absolute;
+  background: transparent url(../../assets/imgs/sprites.06b14dc5.svg) no-repeat; /*-338px -26px*/
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-position: 0 0;
+}
+.toast-icon.icon-success::after {
+  background-position: -338px -26px;
+}
+
+.toast-icon.icon-infor::after {
+  background-position: -219px -283px;
+}
+
+.toast-icon.icon-warning::after {
+  background-position: -170px -170px;
+}
+
+.toast-icon.icon-error::after {
+  background-position: -338px -50px;
+}
+.toast.error .toast-title {
+  color: var(--error-color);
+}
+.toast.warning .toast-title {
+  color: var(--warning-color);
+}
+.toast.infor .toast-title {
+  color: var(--infor-color);
+}
+.toast.success .toast-title {
+  color: var(--valid-color);
+}
+.icon-quit {
+  width: 16px;
+  height: 16px;
+}
+.icon-quit::after {
+  content: "";
+  position: absolute;
+  background: transparent url(../../assets/imgs/sprites.06b14dc5.svg) no-repeat -244px -28px;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 50px;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+  }
+}
